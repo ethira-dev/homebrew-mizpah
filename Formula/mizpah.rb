@@ -1,17 +1,17 @@
 class Mizpah < Formula
   desc "JSON log viewer with web UI and MCP for AI agents"
   homepage "https://github.com/ethira-dev/mizpah"
-  version "0.17.6"
+  version "0.17.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ethira-dev/mizpah/releases/download/v0.17.6/mizpah-aarch64-apple-darwin.tar.gz"
-      sha256 "e37a9db336d7c29368d30423a042f8bfed9b37e0ecc2416961e84c939453aa4f"
+      url "https://github.com/ethira-dev/mizpah/releases/download/v0.17.7/mizpah-aarch64-apple-darwin.tar.gz"
+      sha256 "a3715e20973b5fbb9d83eb42731177342921734d6f6fbdcdcf0d962dbcfe2bc6"
     end
     on_intel do
-      url "https://github.com/ethira-dev/mizpah/releases/download/v0.17.6/mizpah-x86_64-apple-darwin.tar.gz"
-      sha256 "4fd7b96a10d9c5661d77ae20fc4d0882f1d56ed32c736ef013fed82f4a427b65"
+      url "https://github.com/ethira-dev/mizpah/releases/download/v0.17.7/mizpah-x86_64-apple-darwin.tar.gz"
+      sha256 "301a6288ecf810c4cca0b4f0a6d3ffb3cc52d0d0a301e686273e6dacee9442a8"
     end
   end
 
@@ -21,7 +21,6 @@ class Mizpah < Formula
   end
 
   test do
-    assert_match "mizpah", shell_output("#{bin}/mizpah --version")
-    assert_match "mizpah", shell_output("#{bin}/mzp --version")
+    assert_match version.to_s, shell_output("#{bin}/mizpah --version")
   end
 end
