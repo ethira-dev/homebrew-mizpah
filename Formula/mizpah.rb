@@ -1,17 +1,17 @@
 class Mizpah < Formula
   desc "JSON log viewer with web UI and MCP for AI agents"
   homepage "https://github.com/ethira-dev/mizpah"
-  version "0.18.1"
+  version "0.19.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ethira-dev/mizpah/releases/download/v0.18.1/mizpah-aarch64-apple-darwin.tar.gz"
-      sha256 "904559471edd7ffaee40882323ed035e687050cc4bba534c7ba228e1531a4234"
+      url "https://github.com/ethira-dev/mizpah/releases/download/v0.19.0/mizpah-aarch64-apple-darwin.tar.gz"
+      sha256 "67ee0979ceff3c99bd00e69546b74719a983edd99c8aedde5cf9d47a34d87b18"
     end
     on_intel do
-      url "https://github.com/ethira-dev/mizpah/releases/download/v0.18.1/mizpah-x86_64-apple-darwin.tar.gz"
-      sha256 "5430410175ebeffb0536b5ca7bb2a20d856d83683f7685aea2a66b7258713581"
+      url "https://github.com/ethira-dev/mizpah/releases/download/v0.19.0/mizpah-x86_64-apple-darwin.tar.gz"
+      sha256 "582431d541b0491be8ef499929205fb850217c0a0b4330bbec38fc92b529c8bf"
     end
   end
 
