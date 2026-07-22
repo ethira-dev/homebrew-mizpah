@@ -20,6 +20,15 @@ class Mizpah < Formula
     bin.install "mzp"
   end
 
+  def caveats
+    <<~EOS
+      This tap is deprecated. Migrate to the org tap:
+
+        brew untap ethira-dev/mizpah
+        brew install ethira-dev/tap/mizpah
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/mizpah --version")
   end
